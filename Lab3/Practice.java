@@ -1,3 +1,5 @@
+package Lab3;
+
 import java.util.Scanner;
 import java.util.Vector;
 import java.util.Comparator;
@@ -10,7 +12,7 @@ public class Practice {
         return mostSuccessfulStudent;
     }
 
-    public static void main(String[] args) {
+    public static void lab3() {
         Scanner scanner = new Scanner(System.in);
         Vector<Student> students = new Vector<>();
 
@@ -43,7 +45,7 @@ public class Practice {
                 }else {
                     int studentNumber = 1;
                     for (Student student : students) {
-                        System.out.println("Details of Student " + studentNumber + ":");
+                        System.out.println("Details of Lab3.Student " + studentNumber + ":");
                         student.printInformation();
                         System.out.println("----------------");
                         studentNumber++;
@@ -62,12 +64,12 @@ public class Practice {
             } else if(x==4){
                 System.out.println("All data was deleted");
                 students.clear();
-            } else {
+            } else if(x==5){
                 System.out.println("The end of program");
                 break;
+            } else{
+                System.out.println("Enter integer between 1 - 5");
             }
         }
-
-        scanner.close();
     }
 }

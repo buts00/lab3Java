@@ -1,3 +1,5 @@
+package Lab3;
+
 public class Student {
     private  String name;
     private String university;
@@ -43,9 +45,9 @@ public class Student {
     }
 
     public void printInformation() {
-        System.out.println("Student's name: " + getName());
+        System.out.println("Lab3.Student's name: " + getName());
         System.out.println("University: " + getUniversity());
         System.out.println("Faculty of: " + getFaculty());
-        System.out.println("Student's age: " + getAverageScore());
+        System.out.println("Lab3.Student's age: " + getAverageScore());
     }
 }
