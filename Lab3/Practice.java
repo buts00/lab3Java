@@ -67,7 +67,7 @@ public class Practice {
             } else if(x==5){
                 System.out.println("The end of program");
                 break;
-            } else{
+            } else {
                 System.out.println("Enter integer between 1 - 5");
             }
         }
